@@ -1,0 +1,47 @@
+.about {
+  padding: 1rem 5rem 2.5rem 5rem;
+  background-image: linear-gradient(180deg, #f4f3f2 50%, #ffffff 50%);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.about img {
+  min-width: 38%;
+  max-height: auto;
+  margin: 2.5rem 0 2.5rem 0;
+  border-radius: 20px;
+}
+.about-img {
+  height: 500px;
+}
+
+.about-article {
+  background-color: #f4f3f2;
+  border-radius: 20px;
+  padding: 0.5rem;
+  max-width: 90ch;
+}
+
+.about-info {
+  min-width: 60%;
+  padding: 0 5rem 0 5rem;
+}
+
+@media screen and (max-width: 520px) {
+  .about {
+    padding: 0 0 1rem 0;
+  }
+  .about img {
+    min-width: 50%;
+    max-height: auto;
+    margin: 2.5rem 0 2.5rem 0;
+    border-radius: 20px;
+  }
+  .about-img {
+    height: 400px;
+  }
+  .about-info {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+}

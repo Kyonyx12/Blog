@@ -1,0 +1,18 @@
+.modal {
+  position: sticky;
+  top: 49.594px;
+  width: 100%;
+  height: 25%;
+  background-color: #f4f3f2;
+}
+
+.modal-links {
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+}
+
+.modal li {
+  margin: 1rem;
+}

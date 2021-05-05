@@ -1,0 +1,67 @@
+.grid-posts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 5rem 0 5rem;
+  margin-bottom: 5rem;
+}
+.grid-card {
+  box-shadow: 0 20px 20px 20px #f4f3f2;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  width: 24rem;
+  height: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.grid-card img {
+  border-radius: 1rem 1rem 0 0;
+  width: 24rem;
+  height: 340px;
+}
+.grid-card h4 {
+  margin: 1rem 0 1rem 0;
+}
+.grid-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 1rem;
+}
+.grid-article {
+  height: 160px;
+}
+.grid-post-type {
+  text-transform: uppercase;
+}
+
+.grid-head {
+  margin-top: 5rem;
+  padding: 0 5rem 0 5rem;
+}
+.grid-head .underline {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 388px) {
+  .grid-card h4 {
+    margin: 0;
+  }
+  .grid-card {
+    margin-top: 0.5rem;
+    width: 260px;
+    height: auto;
+  }
+  .grid-card img {
+    width: 260px;
+  }
+  .grid-posts {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+  }
+}
