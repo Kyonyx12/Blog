@@ -1,7 +1,7 @@
 {
   "name": "my-blog",
   "version": "0.1.0",
-  "homepage": "https://kyonyx12.github.io/my-blog",
+  "homepage": "https://kyonyx12.github.io/Blog",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
