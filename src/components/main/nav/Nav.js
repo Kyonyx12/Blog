@@ -21,7 +21,7 @@ export default function Nav({ setModal, modal }) {
       <div>
         <ul className="nav-links">
           <li>
-            <Link to="/Blog">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

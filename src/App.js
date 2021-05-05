@@ -19,7 +19,7 @@ function App() {
           <Nav setModal={setModal} modal={modal} />
           {modal && <Modal setModal={setModal} modal={modal} />}
           <Switch>
-            <Route path="/Blog" exact component={Main} />
+            <Route path="/" exact component={Main} />
             <Route path="/about" component={About} />
             <Route path="/blog" component={Blog} />
             <Route path="/:post" component={Post} />
