@@ -1,4 +1,4 @@
-import profile from "../../images/profile.jpg";
+import profile from "../../assets/profile.jpg";
 import "./About.css";
 export default function About() {
   return (

@@ -27,7 +27,7 @@ export default function Nav({ setModal, modal }) {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/post">Post</Link>
           </li>
         </ul>
       </div>

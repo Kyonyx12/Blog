@@ -18,8 +18,8 @@ export default function Modal({ setModal, modal }) {
               </Link>
             </li>
             <li>
-              <Link to="/blog" onClick={() => setModal(!modal)}>
-                Blog
+              <Link to="/post" onClick={() => setModal(!modal)}>
+                Post
               </Link>
             </li>
           </ul>

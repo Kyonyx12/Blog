@@ -24,7 +24,11 @@ export default function Header() {
       </h1>
     );
   } else {
-    const { date, name, article, image, id } = blogs[0];
+    const recentPost = blogs
+      .map((post) => Number(post.order))
+      .indexOf(Math.max(...blogs.map((post) => Number(post.order))));
+
+    const { date, name, article, image, id } = blogs[recentPost];
 
     return (
       <header>
@@ -58,7 +62,6 @@ export default function Header() {
           </div>
         </section>
         <section className="newsletter">
-          <div className="newletter-dots">{/*insert dot img here, svg*/}</div>
           <div className="newsletter-container">
             <div className="newsletter-info">
               <h1>Subscribe to my Newsletter</h1>

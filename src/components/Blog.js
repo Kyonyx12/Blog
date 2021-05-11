@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 import { db } from "../firebase/firebase";
-import "./Post.css";
-export default function Post({ match }) {
+import "./Blog.css";
+export default function Blog({ match }) {
   const [loading, setLoading] = useState(true);
   const [post, setPost] = useState([]);
 
   const getPost = async () => {
     db.collection("blogs")
-      .doc(`${match.params.post}`)
+      .doc(`${match.params.blog}`)
       .onSnapshot((querySnapshot) => {
         const post = querySnapshot.data();
         setPost(post);
+
         setLoading(false);
       });
   };
