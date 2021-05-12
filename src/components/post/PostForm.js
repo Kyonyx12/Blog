@@ -69,6 +69,7 @@ export default function PostForm({ addOrEdit }) {
         name="image"
         value={post.image}
       />
+
       <textarea
         required
         onChange={handleChange}

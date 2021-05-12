@@ -1,0 +1,72 @@
+.login {
+  background-image: linear-gradient(180deg, #f4f3f2 70%, #ffffff 50%);
+  height: 78.1vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  height: 500px;
+  width: 380px;
+  background-image: linear-gradient(180deg, #ffffff 72%, #f4f3f2 10%);
+
+  display: inherit;
+  flex-flow: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  box-shadow: 0 3px 10px 3px #b67b4b;
+  border-radius: 20px;
+  border: solid 2px #b67b4b;
+}
+#customBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: "Roboto", sans-serif;
+}
+span.icon {
+  background: url("https://developers.google.com/identity/sign-in/g-normal.png")
+    transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: "Roboto", sans-serif;
+}
+.login h2 {
+  margin: 0 0.25rem 2rem 0.25rem;
+}
+
+@media screen and (max-width: 500px) {
+  .login-container {
+    background-image: linear-gradient(180deg, #ffffff 74%, #f4f3f2 10%);
+    height: 460px;
+    width: 90vw;
+  }
+}

@@ -73,6 +73,14 @@
   position: relative;
   top: 1px;
 }
+
+/* input file style */
+#image {
+  background-color: white;
+  padding-bottom: 0.25rem;
+  height: auto;
+}
+
 @media screen and (max-width: 420px) {
   .blog-info {
     min-width: 50%;
