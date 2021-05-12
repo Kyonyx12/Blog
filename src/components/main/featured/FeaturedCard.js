@@ -4,7 +4,7 @@ export default function FeaturedCard({ blogs }) {
     <>
       {blogs
         .map((post) => {
-          const { id, image, type, article, date } = post;
+          const { id, image, category, article, date } = post;
           return (
             <article className="featured-card" key={id}>
               <div className="featured-img-container">
@@ -12,7 +12,7 @@ export default function FeaturedCard({ blogs }) {
               </div>
               <div className="featured-info">
                 <div className="post-type">
-                  <p>{type}</p>
+                  <p>{category}</p>
                 </div>
                 <h4>{article.substring(0, 200)}...</h4>
                 <Link to={`${id}`}>See more</Link>

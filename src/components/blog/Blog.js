@@ -29,7 +29,7 @@ export default function Blog({ match }) {
         <article className="post">
           <div className="post-info">
             <h1>{post.name}</h1>
-            <p>{post.type}</p>
+            <p>{post.category}</p>
             <p>{post.date}</p>
           </div>
           <img src={post.image} alt="post" className="post-img" />

@@ -4,7 +4,7 @@ export default function GridFeatured({ data }) {
   return (
     <>
       {data.map((post) => {
-        const { id, image, type, article, date } = post;
+        const { id, image, category, article, date } = post;
         return (
           <article className="grid-card" key={id}>
             <div className="grid-img-container">
@@ -12,7 +12,7 @@ export default function GridFeatured({ data }) {
             </div>
             <div className="grid-info">
               <div className="grid-post-type">
-                <p>{type}</p>
+                <p>{category}</p>
               </div>
               <div className="grid-article">
                 <h4>{article.substring(0, 200)}...</h4>
