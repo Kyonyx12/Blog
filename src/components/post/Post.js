@@ -23,11 +23,7 @@ export default function Post() {
   };
   return (
     <section className="blog">
-      <PostForm addOrEdit={addOrEdit} />
-      <div>
-        <h2>Post Page</h2>
-        <button onClick={handleLogout}>Logout</button>
-      </div>
+      <PostForm addOrEdit={addOrEdit} handleLogout={handleLogout} />
     </section>
   );
 }

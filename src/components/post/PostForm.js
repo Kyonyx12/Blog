@@ -4,7 +4,7 @@ import { st } from "../../firebase/firebase";
 import { toast } from "react-toastify";
 import "./Post.css";
 
-export default function PostForm({ addOrEdit }) {
+export default function PostForm({ addOrEdit, handleLogout }) {
   const initialStateBlogs = {
     category: "",
     name: "",
@@ -77,7 +77,12 @@ export default function PostForm({ addOrEdit }) {
         value={post.article}
         placeholder="Start the article..."
       />
-      <button>POST</button>
+      <div>
+        <button>POST</button>
+        <button id="logout-btn" onClick={handleLogout}>
+          Logout
+        </button>
+      </div>
     </form>
   );
 }

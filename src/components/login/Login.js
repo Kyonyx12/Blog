@@ -20,7 +20,7 @@ const Login = () => {
         });
       })
       .catch((err) => {
-        console.log(err);
+        if (!err.code === "auth/popup-closed-by-user") console.log(err);
       });
   };
   return (

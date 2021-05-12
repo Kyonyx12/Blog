@@ -32,9 +32,15 @@ export default function Nav({ setModal, modal }) {
         </ul>
       </div>
       <div>
-        <TiSocialFacebookCircular size="2.85rem" className="nav-social" />
-        <TiSocialGithubCircular size="2.85rem" className="nav-social" />
-        <TiSocialTwitterCircular size="2.85rem" className="nav-social" />
+        <a href="https://kyonyx12.github.io/my-blog">
+          <TiSocialFacebookCircular size="2.85rem" className="nav-social" />
+        </a>
+        <a href="https://kyonyx12.github.io/my-blog">
+          <TiSocialGithubCircular size="2.85rem" className="nav-social" />
+        </a>
+        <a href="https://kyonyx12.github.io/my-blog">
+          <TiSocialTwitterCircular size="2.85rem" className="nav-social" />
+        </a>
       </div>
     </nav>
   );

@@ -5,8 +5,8 @@ export default function About() {
     <>
       <article className="about">
         <div className="about-info">
-          <h1>Jose Antonio Lopez Ramos</h1>
-          <p>Frontend Developer</p>
+          <h1>Not AReal Name</h1>
+          <p>My profesion</p>
         </div>
         <img src={profile} alt="about" className="about-img" />
         <div className="about-article">

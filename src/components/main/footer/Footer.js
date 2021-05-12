@@ -7,17 +7,17 @@ export default function Footer() {
     <footer>
       <ul>
         <li>
-          <a href="#index.html">
+          <a href="https://kyonyx12.github.io/my-blog">
             <SiInstagram size="2.5rem" className="footer-social" />
           </a>
         </li>
         <li>
-          <a href="#index.html">
+          <a href="https://kyonyx12.github.io/my-blog">
             <SiGithub size="2.5rem" className="footer-social" />
           </a>
         </li>
         <li>
-          <a href="#index.html">
+          <a href="https://kyonyx12.github.io/my-blog">
             <SiFacebook size="2.5rem" className="footer-social" />
           </a>
         </li>
