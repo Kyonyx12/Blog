@@ -7,9 +7,11 @@ export default function FeaturedCard({ blogs }) {
           const { id, image, category, article, date } = post;
           return (
             <article className="featured-card" key={id}>
-              <div className="featured-img-container">
-                <img src={image} alt="post-cover" />
-              </div>
+              <Link to={`${id}`}>
+                <div className="featured-img-container">
+                  <img src={image} alt="post-cover" />
+                </div>
+              </Link>
               <div className="featured-info">
                 <div className="post-type">
                   <p>{category}</p>

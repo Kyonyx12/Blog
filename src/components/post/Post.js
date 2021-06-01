@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { GoogleAuthContext } from "../../context/GoogleAuthContext";
 import { auth } from "../../firebase/firebase";
 import { db } from "../../firebase/firebase";
@@ -6,8 +6,15 @@ import { toast } from "react-toastify";
 import PostForm from "./PostForm";
 import "firebase/auth";
 import "./Post.css";
+import PostAlert from "./PostAlert";
 
 export default function Post() {
+  const [alert, setAlert] = useState(true);
+
+  const handleAlert = () => {
+    setAlert(!alert);
+  };
+
   const { onLogedChange } = useContext(GoogleAuthContext);
   const addOrEdit = async (blogsObj) => {
     await db.collection("blogs").doc().set(blogsObj);
@@ -22,8 +29,11 @@ export default function Post() {
     });
   };
   return (
-    <section className="blog">
-      <PostForm addOrEdit={addOrEdit} handleLogout={handleLogout} />
-    </section>
+    <>
+      {alert && <PostAlert handleAlert={handleAlert} />}
+      <section className="blog">
+        <PostForm addOrEdit={addOrEdit} handleLogout={handleLogout} />
+      </section>
+    </>
   );
 }

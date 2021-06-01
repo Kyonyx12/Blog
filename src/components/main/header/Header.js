@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext /*useState*/ } from "react";
 import { BiRightArrow, BiDotsVerticalRounded } from "react-icons/bi";
 import { AiOutlineInfo } from "react-icons/ai";
 import { BlogContext } from "../../../context/BlogContext";
@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const { blogs, loading } = useContext(BlogContext);
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  const handleChange = (e) => setEmail(e.target.value);
+  // const handleChange = (e) => setEmail(e.target.value);
 
   if (loading === true) {
     return (
@@ -57,10 +57,14 @@ export default function Header() {
               <br />
             </div>
           </div>
-          <div className="header-img-container">
-            <img src={image} alt={name} className="header-img" />
-          </div>
+          <Link to={`${id}`}>
+            <div className="header-img-container">
+              <img src={image} alt={name} className="header-img" />
+            </div>
+          </Link>
         </section>
+        {/*` NEWSLETTER FUNCTIONALITY TO BE IMPLEMENTED
+          
         <section className="newsletter">
           <div className="newsletter-container">
             <div className="newsletter-info">
@@ -79,7 +83,7 @@ export default function Header() {
               </button>
             </form>
           </div>
-        </section>
+        </section>`*/}
       </header>
     );
   }

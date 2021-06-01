@@ -8,11 +8,12 @@ import "./Login.css";
 
 const Login = () => {
   const { onLogedChange } = useContext(GoogleAuthContext);
+
   const handleLogIn = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth
       .signInWithPopup(provider)
-      .then((result) => {
+      .then((_) => {
         localStorage.setItem("loged", "true");
         onLogedChange(true);
         toast("Loged in!", {

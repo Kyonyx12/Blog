@@ -2,8 +2,8 @@ import {
   TiSocialFacebookCircular,
   TiSocialGithubCircular,
   TiSocialTwitterCircular,
-  TiThMenuOutline,
 } from "react-icons/ti";
+import { GiHamburgerMenu } from "react-icons/gi";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ export default function Nav({ setModal, modal }) {
   return (
     <nav>
       <div className="logo">
-        <TiThMenuOutline
+        <GiHamburgerMenu
           className="mobile-menu"
           size="1.5rem"
           onClick={() => setModal(!modal)}

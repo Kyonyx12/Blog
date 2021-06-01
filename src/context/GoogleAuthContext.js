@@ -5,6 +5,7 @@ export const GoogleAuthContext = createContext();
 
 export const GoogleAuthProvider = ({ children }) => {
   const [loged, setLoged] = useState(null);
+
   const onLogedChange = (boolean) => {
     setLoged(boolean);
   };

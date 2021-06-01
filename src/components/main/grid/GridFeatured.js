@@ -7,9 +7,11 @@ export default function GridFeatured({ data }) {
         const { id, image, category, article, date } = post;
         return (
           <article className="grid-card" key={id}>
-            <div className="grid-img-container">
-              <img src={image} alt="post-cover" className="grid-img" />
-            </div>
+            <Link to={`${id}`}>
+              <div className="grid-img-container">
+                <img src={image} alt="post-cover" className="grid-img" />
+              </div>
+            </Link>
             <div className="grid-info">
               <div className="grid-post-type">
                 <p>{category}</p>
