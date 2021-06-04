@@ -5,6 +5,7 @@ export default function FeaturedCard({ blogs }) {
       {blogs
         .map((post) => {
           const { id, image, category, article, date } = post;
+
           return (
             <article className="featured-card" key={id}>
               <Link to={`${id}`}>

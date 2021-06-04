@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { db } from "../../firebase/firebase";
+
+import Comments from "./comments/Comments";
 import "./Blog.css";
 
 export default function Blog({ match }) {
@@ -26,17 +28,20 @@ export default function Blog({ match }) {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <article className="post">
-          <div className="post-info">
-            <h1>{post.name}</h1>
-            <p>{post.category}</p>
-            <p>{post.date}</p>
-          </div>
-          <img src={post.image} alt="post" className="post-img" />
-          <div className="post-article">
-            <p>{post.article}</p>
-          </div>
-        </article>
+        <>
+          <article className="post">
+            <div className="post-info">
+              <h1>{post.name}</h1>
+              <p>{post.category}</p>
+              <p>{post.date}</p>
+            </div>
+            <img src={post.image} alt="post" className="post-img" />
+            <div className="post-article">
+              <p className="justify">{post.article}</p>
+            </div>
+          </article>
+          <Comments />
+        </>
       )}
     </>
   );

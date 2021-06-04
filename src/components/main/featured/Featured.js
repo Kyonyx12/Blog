@@ -1,10 +1,11 @@
-import "./Featured.css";
-import FeaturedCard from "./FeaturedCard";
+import React, { useContext } from "react";
+
+import { BlogContext } from "../../../context/BlogContext";
 import { CgArrowLongRight, CgArrowLongLeft } from "react-icons/cg";
 import { AiOutlineLine } from "react-icons/ai";
 
-import React, { useContext } from "react";
-import { BlogContext } from "../../../context/BlogContext";
+import FeaturedCard from "./FeaturedCard";
+import "./Featured.css";
 
 export default function Featured() {
   const { blogs } = useContext(BlogContext);

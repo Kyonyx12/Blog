@@ -1,9 +1,11 @@
 import React, { useContext /*useState*/ } from "react";
+import { BlogContext } from "../../../context/BlogContext";
+
 import { BiRightArrow, BiDotsVerticalRounded } from "react-icons/bi";
 import { AiOutlineInfo } from "react-icons/ai";
-import { BlogContext } from "../../../context/BlogContext";
-import "./Header.css";
 import { Link } from "react-router-dom";
+
+import "./Header.css";
 
 export default function Header() {
   const { blogs, loading } = useContext(BlogContext);

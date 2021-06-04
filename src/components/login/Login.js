@@ -13,9 +13,11 @@ const Login = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth
       .signInWithPopup(provider)
-      .then((_) => {
+      .then((data) => {
+        const username = data.additionalUserInfo.profile.name;
         localStorage.setItem("loged", "true");
-        onLogedChange(true);
+        localStorage.setItem("username", `${username}`);
+        onLogedChange(true, username);
         toast("Loged in!", {
           type: "info",
         });

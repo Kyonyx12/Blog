@@ -4,8 +4,10 @@ import {
   TiSocialTwitterCircular,
 } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
-import "./Nav.css";
+
 import { Link } from "react-router-dom";
+
+import "./Nav.css";
 
 export default function Nav({ setModal, modal }) {
   return (

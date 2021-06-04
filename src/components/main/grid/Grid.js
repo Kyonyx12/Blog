@@ -1,8 +1,10 @@
-import "./Grid.css";
-import GridFeatured from "./GridFeatured";
-import { AiOutlineLine } from "react-icons/ai";
 import React, { useContext } from "react";
 import { BlogContext } from "../../../context/BlogContext";
+
+import { AiOutlineLine } from "react-icons/ai";
+import GridFeatured from "./GridFeatured";
+
+import "./Grid.css";
 
 export default function Grid() {
   const { blogs } = useContext(BlogContext);

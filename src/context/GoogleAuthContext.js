@@ -5,21 +5,24 @@ export const GoogleAuthContext = createContext();
 
 export const GoogleAuthProvider = ({ children }) => {
   const [loged, setLoged] = useState(null);
+  const [username, setUsername] = useState(null);
 
-  const onLogedChange = (boolean) => {
+  const onLogedChange = (boolean, username) => {
     setLoged(boolean);
+    setUsername(username);
   };
 
   useEffect(() => {
     if (localStorage.loged === "true") {
-      onLogedChange(true);
+      const username = localStorage.username;
+      onLogedChange(true, username);
     } else {
-      onLogedChange(false);
+      onLogedChange(false, "");
     }
   }, []);
 
   return (
-    <GoogleAuthContext.Provider value={{ loged, onLogedChange }}>
+    <GoogleAuthContext.Provider value={{ loged, onLogedChange, username }}>
       {children}
     </GoogleAuthContext.Provider>
   );

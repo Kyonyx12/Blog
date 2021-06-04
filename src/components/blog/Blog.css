@@ -25,7 +25,10 @@
   width: 80%;
   white-space: pre-line;
 }
-
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
 .post-info {
   box-shadow: 0 3px 10px 3px #b67b4b99;
   border-radius: 20px;

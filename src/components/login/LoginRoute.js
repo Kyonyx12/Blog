@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Route, Redirect } from "react-router-dom";
+
 import { GoogleAuthContext } from "../../context/GoogleAuthContext";
+import { Route, Redirect } from "react-router-dom";
 
 const LoginRoute = ({ component: Component, ...rest }) => {
   const { loged } = useContext(GoogleAuthContext);

@@ -1,5 +1,5 @@
-import "./Modal.css";
 import { Link } from "react-router-dom";
+import "./Modal.css";
 
 export default function Modal({ setModal, modal }) {
   return (

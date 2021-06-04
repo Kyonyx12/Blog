@@ -1,0 +1,17 @@
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 73%;
+
+  border-radius: 15px;
+  border: 2px solid #b67b4b;
+  margin: auto auto 1rem auto;
+
+  font-size: large;
+}
+
+.comments {
+  width: 80%;
+}

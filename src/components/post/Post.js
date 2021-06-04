@@ -2,11 +2,12 @@ import { useContext, useState } from "react";
 import { GoogleAuthContext } from "../../context/GoogleAuthContext";
 import { auth } from "../../firebase/firebase";
 import { db } from "../../firebase/firebase";
+
 import { toast } from "react-toastify";
+import PostAlert from "./PostAlert";
 import PostForm from "./PostForm";
 import "firebase/auth";
 import "./Post.css";
-import PostAlert from "./PostAlert";
 
 export default function Post() {
   const [alert, setAlert] = useState(true);
@@ -16,9 +17,11 @@ export default function Post() {
   };
 
   const { onLogedChange } = useContext(GoogleAuthContext);
+
   const addOrEdit = async (blogsObj) => {
     await db.collection("blogs").doc().set(blogsObj);
   };
+
   const handleLogout = () => {
     localStorage.setItem("loged", "false");
     onLogedChange(false);
