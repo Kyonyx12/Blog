@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 export default function GridFeatured({ data }) {
@@ -9,7 +10,11 @@ export default function GridFeatured({ data }) {
           <article className="grid-card" key={id}>
             <Link to={`${id}`}>
               <div className="grid-img-container">
-                <img src={image} alt="post-cover" className="grid-img" />
+                <LazyLoadImage
+                  src={image}
+                  alt="post-cover"
+                  className="grid-img"
+                />
               </div>
             </Link>
             <div className="grid-info">

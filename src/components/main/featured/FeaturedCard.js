@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 export default function FeaturedCard({ blogs }) {
   return (
@@ -10,7 +11,7 @@ export default function FeaturedCard({ blogs }) {
             <article className="featured-card" key={id}>
               <Link to={`${id}`}>
                 <div className="featured-img-container">
-                  <img src={image} alt="post-cover" />
+                  <LazyLoadImage src={image} alt="post-cover" />
                 </div>
               </Link>
               <div className="featured-info">

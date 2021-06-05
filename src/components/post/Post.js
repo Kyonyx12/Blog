@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { GoogleAuthContext } from "../../context/GoogleAuthContext";
 import { auth } from "../../firebase/firebase";
 import { db } from "../../firebase/firebase";
-
 import { toast } from "react-toastify";
 import PostAlert from "./PostAlert";
 import PostForm from "./PostForm";

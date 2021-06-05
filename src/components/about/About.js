@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import profile from "../../assets/profile.jpg";
 import "./About.css";
 export default function About() {
@@ -8,7 +9,7 @@ export default function About() {
           <h1>Not AReal Name</h1>
           <p>My profesion</p>
         </div>
-        <img src={profile} alt="about" className="about-img" />
+        <LazyLoadImage src={profile} alt="about" className="about-img" />
         <div className="about-article">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
