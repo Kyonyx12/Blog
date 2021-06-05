@@ -23,6 +23,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  border-bottom: 2px solid #b67b4b99;
 }
 .nav-links {
   margin-left: 3.5rem;
@@ -48,7 +49,7 @@ li a:hover {
 .mobile-menu {
   height: 34px;
   width: 34px;
-  border-radius: 5px;
+  border-radius: 2px;
 
   color: #b67b4b;
   display: none;
