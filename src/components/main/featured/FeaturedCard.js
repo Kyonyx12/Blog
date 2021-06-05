@@ -13,7 +13,13 @@ export default function FeaturedCard({ blogs }) {
             <article className="featured-card" key={id}>
               <Link to={`${id}`}>
                 <div className="featured-img-container">
-                  <LazyLoadImage src={image} alt="post-cover" effect="blur" />
+                  <LazyLoadImage
+                    src={image}
+                    alt="post-cover"
+                    effect="blur"
+                    width="100%"
+                    height="340px"
+                  />
                 </div>
               </Link>
               <div className="featured-info">

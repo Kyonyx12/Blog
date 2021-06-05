@@ -24,12 +24,7 @@
   flex-flow: column wrap;
   align-items: flex-start;
 }
-.featured-card img {
-  border-radius: 4px 4px 0 0;
-  width: 100%;
-  min-height: auto;
-  height: inherit;
-}
+
 .featured-img-container {
   height: 340px;
   width: inherit;

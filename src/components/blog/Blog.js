@@ -39,12 +39,16 @@ export default function Blog({ match }) {
               <p>{post.category}</p>
               <p>{post.date}</p>
             </div>
-            <LazyLoadImage
-              src={post.image}
-              alt="post"
-              className="post-img"
-              effect="blur"
-            />
+            <div className="post-img-container">
+              <LazyLoadImage
+                src={post.image}
+                alt="post"
+                className="post-img"
+                effect="blur"
+                width="100%"
+                height="440px"
+              />
+            </div>
             <div className="post-article">
               <p className="justify">{post.article}</p>
             </div>
