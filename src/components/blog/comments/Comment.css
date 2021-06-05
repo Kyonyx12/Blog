@@ -1,16 +1,10 @@
 .comment {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 
-  align-items: center;
   width: 100%;
-  padding-bottom: 1rem;
-}
-
-.profile-comment {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 1rem;
 }
 
 .profile-img {
@@ -24,4 +18,10 @@
   font-size: 1rem;
   margin-top: 0.5rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 510px) {
+  .profile-img {
+    display: none;
+  }
 }

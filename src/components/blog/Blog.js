@@ -46,7 +46,7 @@ export default function Blog({ match }) {
                 className="post-img"
                 effect="blur"
                 width="100%"
-                height="440px"
+                height="555px"
               />
             </div>
             <div className="post-article">

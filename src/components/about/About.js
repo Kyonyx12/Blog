@@ -16,6 +16,7 @@ export default function About() {
           alt="about"
           className="about-img"
           effect="blur"
+          width="444px"
         />
         <div className="about-article">
           <p>

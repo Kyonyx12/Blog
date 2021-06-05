@@ -6,7 +6,7 @@ import "./Comment.css";
 export default function Comment({ text, username, profileImg }) {
   return (
     <div className="comment">
-      <div className="profile-comment">
+      <div className="profile-img-container">
         <LazyLoadImage
           src={profileImg}
           alt={username}
