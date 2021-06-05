@@ -17,7 +17,7 @@
   box-shadow: 0 3px 10px 3px #b67b4b99;
   margin: 1rem;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 4px;
   width: 340px;
   max-height: auto;
   display: flex;
@@ -25,7 +25,7 @@
   align-items: flex-start;
 }
 .featured-card img {
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 4px 4px 0 0;
   width: 100%;
   min-height: auto;
   height: inherit;

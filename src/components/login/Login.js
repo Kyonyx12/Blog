@@ -15,9 +15,11 @@ const Login = () => {
       .signInWithPopup(provider)
       .then((data) => {
         const username = data.additionalUserInfo.profile.name;
+        const profileImg = data.additionalUserInfo.profile.picture;
         localStorage.setItem("loged", "true");
         localStorage.setItem("username", `${username}`);
-        onLogedChange(true, username);
+        localStorage.setItem("profileImg", `${profileImg}`);
+        onLogedChange(true, { username, profileImg });
         toast("Loged in!", {
           type: "info",
         });

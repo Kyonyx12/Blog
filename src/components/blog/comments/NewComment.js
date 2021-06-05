@@ -11,7 +11,7 @@ const initialState = { content: "" };
 
 export default function NewComment() {
   const [comment, setComment] = useState(initialState);
-  const { username } = useContext(GoogleAuthContext);
+  const { user } = useContext(GoogleAuthContext);
 
   const { blog: id } = useParams();
 
@@ -26,7 +26,7 @@ export default function NewComment() {
 
   const handleChange = (e) => {
     const date = new Date(Date.now()).toString().slice(0, 24);
-    setComment({ content: e.target.value, username, date });
+    setComment({ content: e.target.value, ...user, date });
   };
 
   const handleSubmit = (e) => {

@@ -46,6 +46,7 @@ export default function Comments() {
               id={comment.id}
               text={comment.content}
               username={comment.username}
+              profileImg={comment.profileImg}
             />
           ))}
         </div>

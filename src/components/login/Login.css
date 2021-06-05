@@ -17,7 +17,7 @@
   justify-content: inherit;
   align-items: inherit;
   box-shadow: 0 3px 10px 3px #b67b4b99;
-  border-radius: 20px;
+  border-radius: 4px;
   border: solid 2px #b67b4b;
 }
 #customBtn {
@@ -25,7 +25,7 @@
   background: white;
   color: #444;
   width: 190px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: thin solid #888;
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;

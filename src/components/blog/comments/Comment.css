@@ -1,7 +1,25 @@
 .comment {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 
+  align-items: center;
   width: 100%;
+  padding: 0.5rem;
+}
+
+.profile-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.comment-content {
+  font-size: 1rem;
 }

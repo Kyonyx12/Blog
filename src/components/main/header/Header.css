@@ -26,12 +26,12 @@ header section {
 
 .header-img {
   order: 1;
-  border-radius: 20px;
+  border-radius: 4px;
   width: 50vw;
   height: 60vh;
   overflow: hidden;
   flex-shrink: 1;
-  box-shadow: 0 3px 10px 3px #b67b4b;
+  box-shadow: 0 3px 10px 3px #b67b4b99;
 }
 .header-info-date {
   display: flex;
@@ -56,7 +56,7 @@ header section {
 .header-info-button {
   margin: 3rem 0 1rem 0;
   background-color: #f4f3f2;
-  border-radius: 6px;
+  border-radius: 2px;
   border: 2px solid #b67b4b;
   display: inline-block;
   cursor: pointer;
@@ -91,7 +91,7 @@ form {
   margin-top: 1rem;
   padding: inherit;
   background-color: #f4f3f2;
-  border-radius: 20px;
+  border-radius: 4px;
 }
 .newsletter-form {
   margin: 2.5rem;
@@ -112,7 +112,7 @@ form {
 .newsletter button {
   margin: 2rem 0 1rem 0;
   background-color: #f4f3f2;
-  border-radius: 6px;
+  border-radius: 2px;
   border: 2px solid #b67b4b;
   display: inline-block;
   cursor: not-allowed;
@@ -155,7 +155,7 @@ form {
   }
   .header-img {
     order: 0;
-    border-radius: 20px;
+    border-radius: 4px;
     border: none;
     width: 80vw;
     height: 60vh;
@@ -182,7 +182,7 @@ form {
     margin: 0.5rem;
   }
   .header-img {
-    border-radius: 20px;
+    border-radius: 4px;
     border: none;
     width: 88vw;
     height: 60vh;
