@@ -9,7 +9,7 @@ export default function About() {
       <article className="about">
         <div className="about-info">
           <h1>Not AReal Name</h1>
-          <p>My profesion</p>
+          <p>My profession</p>
         </div>
         <LazyLoadImage
           src={profile}
