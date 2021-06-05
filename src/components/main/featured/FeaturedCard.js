@@ -1,5 +1,7 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 export default function FeaturedCard({ blogs }) {
   return (
     <>
@@ -11,7 +13,7 @@ export default function FeaturedCard({ blogs }) {
             <article className="featured-card" key={id}>
               <Link to={`${id}`}>
                 <div className="featured-img-container">
-                  <LazyLoadImage src={image} alt="post-cover" />
+                  <LazyLoadImage src={image} alt="post-cover" effect="blur" />
                 </div>
               </Link>
               <div className="featured-info">

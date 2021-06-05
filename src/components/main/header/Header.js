@@ -5,8 +5,10 @@ import { BiRightArrow, BiDotsVerticalRounded } from "react-icons/bi";
 import { AiOutlineInfo } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-import "./Header.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "./Header.css";
 
 export default function Header() {
   const { blogs, loading } = useContext(BlogContext);
@@ -62,7 +64,12 @@ export default function Header() {
           </div>
           <Link to={`${id}`}>
             <div className="header-img-container">
-              <LazyLoadImage src={image} alt={name} className="header-img" />
+              <LazyLoadImage
+                src={image}
+                alt={name}
+                className="header-img"
+                effect="blur"
+              />
             </div>
           </Link>
         </section>

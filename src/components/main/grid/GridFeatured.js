@@ -1,6 +1,8 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 export default function GridFeatured({ data }) {
   return (
     <>
@@ -14,6 +16,7 @@ export default function GridFeatured({ data }) {
                   src={image}
                   alt="post-cover"
                   className="grid-img"
+                  effect="blur"
                 />
               </div>
             </Link>

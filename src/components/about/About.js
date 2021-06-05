@@ -1,5 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import profile from "../../assets/profile.jpg";
+
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./About.css";
 export default function About() {
   return (
@@ -9,7 +11,12 @@ export default function About() {
           <h1>Not AReal Name</h1>
           <p>My profesion</p>
         </div>
-        <LazyLoadImage src={profile} alt="about" className="about-img" />
+        <LazyLoadImage
+          src={profile}
+          alt="about"
+          className="about-img"
+          effect="blur"
+        />
         <div className="about-article">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
